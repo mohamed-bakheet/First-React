@@ -24,7 +24,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <div className="mb-4 portfolio d-flex justify-content-center align-items-center flex-column vh-100">
+      <div className=" portfolio d-flex justify-content-center align-items-center flex-column pb-5 ">
         <div className="pt-4 text-center">
           <h2 className="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
           <div className="d-flex align-items-center justify-content-center mb-3">
@@ -39,7 +39,7 @@ export default function Portfolio() {
             {images.map((img, index) => (
               <div className="col-lg-4 col-md-6" key={index}>
                 <div className="rounded-3 overflow-hidden position-relative" onClick={() => displayLight(img)} >
-                  <img alt="" className="w-100 rounded-3" src={img} />
+                  <img alt="" className="w-100 img-fluid rounded-3" src={img} />
                   <div className="layer position-absolute start-0 w-100 top-0 h-100 d-flex justify-content-center align-items-center">
                     <i className="text-white fa-solid fa-plus fa-6x"></i>
                   </div>
